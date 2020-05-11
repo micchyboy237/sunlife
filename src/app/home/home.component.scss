@@ -1,3 +1,7 @@
+ion-header::after {
+  background-image: none;
+}
+
 ion-menu-button {
   color: var(--ion-color-primary);
 }
