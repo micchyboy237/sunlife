@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { Home } from './home.component';
+import { HomeComponent } from './home.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: Home
+    component: HomeComponent
+  },
+  {
+    path: 'manage-ilas-funds',
+    component: HomeComponent
   }
 ];
 
