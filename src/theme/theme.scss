@@ -1,11 +1,5 @@
 html {
     font-size: proportional-text($base-font-size,320px);
 
-    @media (min-width: $grid-breakpoint-md) {
-      font-size: proportional-text($base-font-size,$grid-breakpoint-md);
-    }
-
-    @media (min-width: $grid-breakpoint-lg) {
-      font-size: proportional-text($base-font-size,$grid-breakpoint-lg);
-    }
+ 
 }
