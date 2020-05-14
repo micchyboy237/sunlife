@@ -1,6 +1,12 @@
 /** App CSS Variables **/
 
 $base-font-size: 16px;
+$grid-breakpoint-xs: 0px;
+$grid-breakpoint-sm: 576px;
+$grid-breakpoint-md: 768px;
+$grid-breakpoint-lg: 992px;
+$grid-breakpoint-xl: 1200px;
+
 
 /** Ionic CSS Variables **/
 :root {
