@@ -34,6 +34,7 @@ ion-toolbar {
 ion-avatar {
   width: 2.2em;
   height: 2.2em;
+  background-color: #EEE;
 }
 
 .oval {
@@ -41,6 +42,44 @@ ion-avatar {
   top: calc(12em * 0.66);
   opacity: 0.98;
   width: 100%;
+}
+
+#home-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+#home-nav ion-grid {
+  width: 100%;
+
+  ion-row {
+    height: 100%;
+  }
+
+  ion-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ion-icon {
+    width: 1em;
+    height: 1em;
+  }
+
+  p {
+    font-size: 0.7em;
+    line-height: 0.7em;
+  }
+
+  ion-col:nth-child(2) {
+    padding-top: 20px;
+  }
 }
 
 .coverage-policies {
@@ -57,7 +96,7 @@ ion-avatar {
   }
 }
 
-ion-grid {
+.coverage-policies ion-grid {
   height: 14em;
   width: 100%;
 
@@ -68,7 +107,7 @@ ion-grid {
   ion-col {
     display: flex;
     justify-content: center;
-    align-items: center      
+    align-items: center;      
   }
 
   ion-icon {
@@ -107,8 +146,12 @@ ion-grid {
     height: 10em;
   }
 
+  .coverage-policies {
+    margin-top: 3.4em;
+  }
+
   .oval {
-    width: 12em;
+    width: 16em;
 
     top: calc(10em - 2em);
   }
@@ -117,11 +160,7 @@ ion-grid {
 @media (min-width: 992px) {
   #banner {
     height: 8em;
-  }
-
-  .coverage-policies {
-    padding-top: 3em;
-  }
+  }  
 
   .oval {
     width: 16em;
