@@ -24,7 +24,7 @@
 
   <div id="container">
     <div id="banner">
-      <ion-avatar>
+      <ion-avatar class="ion-hide-lg-up">
         <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
       </ion-avatar>
       <ion-text color="light">
@@ -39,5 +39,82 @@
     </div>
 
     <ion-img class="oval" src="/assets/oval.svg"></ion-img>
-  </div>
+
+    <div class="coverage-policies">      
+      <ion-router-link href="#" color="dark">
+        <h4>Coverage from 4 Policies <ion-icon slot="end" name="chevron-forward" size="large"></ion-icon></h4>        
+      </ion-router-link>      
+
+      <div class="policy-grid">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <div>
+                <ion-icon name="heart-circle" class="policy-life"></ion-icon>
+                <ion-text color="dark">
+                  <p class="policy-name">
+                    Life
+                  </p>
+
+                  <p>
+                    <small>HKD 6,146,066</small>
+                  </p>
+                </ion-text>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div>
+                <ion-icon name="heart-circle" class="policy-illness"></ion-icon>
+                <ion-text color="dark">
+                  <p class="policy-name">
+                    Critical Illness
+                  </p>
+
+                  <p>
+                    <small>up to HKD 1,000,000</small>
+                  </p>
+                </ion-text>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <div>
+                <ion-icon name="heart-circle" class="policy-medical"></ion-icon>
+                <ion-text color="dark">
+                  <p class="policy-name">
+                    Medical & Hosp.
+                  </p>
+
+                  <p>
+                    <small>up to HKD 721,800/year, HKD 600,000/disablity</small>
+                  </p>
+                </ion-text>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div>
+                <ion-icon name="heart-circle" class="policy-accident"></ion-icon>
+                <ion-text color="dark">
+                  <p class="policy-name">
+                    Accident
+                  </p>
+
+                  <p>
+                    <small>up to HKD 1,000,000</small>
+                  </p>
+                </ion-text>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </div>
+
+    <ion-text class="note" color="medium" size="small">
+      <p>
+        *Additional coverages detailed in provision
+      </p>
+    </ion-text>
+  </div>    
 </ion-content>

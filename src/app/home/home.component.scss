@@ -10,45 +10,122 @@ ion-toolbar {
 
 #container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  font-size: 1rem;
+  text-align: center;
+
+  p {
+    font-size: 0.8em;
+  }
 }
 
 #banner {
-  flex: 1;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: green;
-  height: 12rem;
-  padding-top: 2rem;
-  text-align: center;
-
-
-  @media (min-width: 992px) {
-    height: 10rem;
-    align-self: center;
-  }
-}
-
-#banner p {
-  font-size: 0.8rem;
-}
-
-#banner h4 {
+  height: 12em;
+  padding-top: 2em;  
 }
 
 ion-avatar {
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 2.2em;
+  height: 2.2em;
 }
 
 .oval {
   position: absolute;
-  top: calc(12rem * 0.66);
+  top: calc(12em * 0.66);
   opacity: 0.98;
   width: 100%;
+}
 
-  @media (min-width: 992px) {
-    width: 12rem;
+.coverage-policies {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  margin-top: 2.4em;
+
+  h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+ion-grid {
+  height: 14em;
+  width: 100%;
+
+  ion-row {
+    height: 50%;    
+  }
+
+  ion-col {
+    display: flex;
+    justify-content: center;
+    align-items: center      
+  }
+
+  ion-icon {
+    width: 3em;
+    height: 3em;
+  }
+}
+
+.policy-life {
+  fill: #DA1F46;
+}
+
+.policy-illness {
+  fill: #003946;
+}
+
+.policy-medical {
+  fill: #01B4BD;
+}
+
+.policy-accident {
+  fill: #FFCC05;
+}
+
+.note {
+  font-size: 0.6em;
+  font-weight: bold;
+}
+
+@media (min-width: 576px) {
+  #container {
+    font-size: 0.8rem;
+  }
+
+  #banner {
+    height: 10em;
+  }
+
+  .oval {
+    width: 12em;
+
+    top: calc(10em - 2em);
+  }
+}
+
+@media (min-width: 992px) {
+  #banner {
+    height: 8em;
+  }
+
+  .coverage-policies {
+    padding-top: 3em;
+  }
+
+  .oval {
+    width: 16em;
+
+    top: calc(8em - 2em);
   }
 }
