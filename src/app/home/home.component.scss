@@ -56,6 +56,10 @@ ion-avatar {
 }
 
 #home-nav ion-grid {
+  .home-nav-btn {
+    text-align: center;
+  }
+
   width: 100%;
 
   ion-row {
@@ -66,6 +70,10 @@ ion-avatar {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  ion-item {
+    --background: transparent;
   }
 
   ion-icon {
