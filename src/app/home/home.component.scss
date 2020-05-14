@@ -8,31 +8,47 @@ ion-toolbar {
   --background: transparent;
 }
 
-#banner {
+#container {
   display: flex;
   justify-content: center;
+}
+
+#banner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: green;
-  min-height: 220px;
-  height: 7rem;
+  height: 12rem;
+  padding-top: 2rem;
+  text-align: center;
+
+
+  @media (min-width: 992px) {
+    height: 10rem;
+    align-self: center;
+  }
+}
+
+#banner p {
+  font-size: 0.8rem;
+}
+
+#banner h4 {
 }
 
 ion-avatar {
-  width: 2.6rem;
-  height: 2.6rem;
+  width: 2.2rem;
+  height: 2.2rem;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+.oval {
+  position: absolute;
+  top: calc(12rem * 0.66);
+  opacity: 0.98;
+  width: 100%;
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-  color: #8c8c8c;
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+  @media (min-width: 992px) {
+    width: 12rem;
+  }
 }
