@@ -95,7 +95,7 @@ ion-avatar {
   }
 }
 
-.coverage-policies {
+#ilasFunds {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -109,7 +109,21 @@ ion-avatar {
   }
 }
 
-.coverage-policies ion-grid {
+#policyServicing {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  margin-top: 2.4em;
+
+  h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#ilasFunds ion-grid {
   height: 14em;
   width: 100%;
 
@@ -159,7 +173,7 @@ ion-avatar {
     height: 10em;
   }
 
-  .coverage-policies {
+  #ilasFunds {
     margin-top: 3.4em;
   }
 
