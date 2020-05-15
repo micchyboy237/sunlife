@@ -89,9 +89,12 @@
       </div>
     </div>
 
-    <div *ngIf="selectedIndex !== 2" id="ilasFunds">      
+    <div *ngIf="selectedIndex !== 2" id="ilasFunds" class="inner-section">      
       <ion-router-link href="#" color="dark">
-        <h4>Coverage from 4 Policies <ion-icon slot="end" name="chevron-forward" size="large"></ion-icon></h4>        
+        <div class="text-icon">
+          <h4>Coverage from 4 Policies</h4>
+          <ion-icon slot="end" name="chevron-forward" size="large"></ion-icon>
+        </div>
       </ion-router-link>      
 
       <div class="policy-grid">
@@ -158,83 +161,103 @@
           </ion-row>
         </ion-grid>
       </div>
+
+      <ion-text class="note" color="medium" size="small">
+        <p>
+          *Additional coverages detailed in provision
+        </p>
+      </ion-text>
     </div>
 
-    <div *ngIf="selectedIndex == 2" id="policyServicing">      
-      <ion-router-link href="#" color="dark">
-        <h4>Coverage from 4 Policies <ion-icon slot="end" name="chevron-forward" size="large"></ion-icon></h4>        
-      </ion-router-link>      
+    <div *ngIf="selectedIndex == 2" id="policyServicing" class="inner-section">      
+      <ion-grid>
+        <ion-row>
+          <ion-col size-xs="10">
+            <ion-icon name="document-text-outline" size="large"></ion-icon>
+            <ion-list>
+              <ion-list-header lines="none">
+                <ion-label>Move value from one policy to another</ion-label>
+              </ion-list-header>
+              <ion-item lines="none">
+                <ion-router-link href="#" color="dark">
+                  <div class="text-icon">
+                    <p>Pay with Policy Value</p>
+                    <ion-icon color="dark" slot="end" name="chevron-forward" size="large"></ion-icon>
+                  </div>
+                </ion-router-link>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-router-link href="#" color="dark">
+                  <div class="text-icon">
+                    <p>Standing Instructions</p>
+                    <ion-icon color="dark" slot="end" name="chevron-forward" size="large"></ion-icon>
+                  </div>
+                </ion-router-link>
+              </ion-item>
+            </ion-list>
+          </ion-col>
 
-      <div class="policy-grid">
-        <ion-grid>
-          <ion-row>
-            <ion-col>
-              <div>
-                <ion-icon name="heart-circle" class="policy-life"></ion-icon>
-                <ion-text color="dark">
-                  <p class="policy-name">
-                    Life
-                  </p>
+          <ion-col size-xs="10">
+            <ion-icon name="document-text-outline" size="large"></ion-icon>
+            <ion-list>
+              <ion-list-header lines="none">
+                <ion-label>Cash out your policy values</ion-label>
+              </ion-list-header>
+              <ion-item lines="none">
+                <ion-router-link href="#" color="dark">
+                  <div class="text-icon">
+                    <p>Value Withdrawal</p>
+                    <ion-icon color="dark" slot="end" name="chevron-forward" size="large"></ion-icon>
+                  </div>
+                </ion-router-link>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-router-link href="#" color="dark">
+                  <div class="text-icon">
+                    <p>Payout Method</p>
+                    <ion-icon color="dark" slot="end" name="chevron-forward" size="large"></ion-icon>
+                  </div>
+                </ion-router-link>
+              </ion-item>
+            </ion-list>
+          </ion-col>
 
-                  <p>
-                    <small>HKD 6,146,066</small>
-                  </p>
-                </ion-text>
-              </div>
-            </ion-col>
-            <ion-col>
-              <div>
-                <ion-icon name="heart-circle" class="policy-illness"></ion-icon>
-                <ion-text color="dark">
-                  <p class="policy-name">
-                    Critical Illness
-                  </p>
+          <ion-col size-xs="10">
+            <ion-icon name="document-text-outline" size="large"></ion-icon>
+            <ion-list>
+              <ion-list-header lines="none">
+                <ion-label>Take a loan against your policy value</ion-label>
+              </ion-list-header>
+              <ion-item lines="none">
+                <ion-router-link href="#" color="dark">
+                  <div class="text-icon">
+                    <p>Loans</p>
+                    <ion-icon color="dark" slot="end" name="chevron-forward" size="large"></ion-icon>
+                  </div>
+                </ion-router-link>
+              </ion-item>
+            </ion-list>
+          </ion-col>
 
-                  <p>
-                    <small>up to HKD 1,000,000</small>
-                  </p>
-                </ion-text>
-              </div>
-            </ion-col>
-          </ion-row>
-          <ion-row>
-            <ion-col>
-              <div>
-                <ion-icon name="heart-circle" class="policy-medical"></ion-icon>
-                <ion-text color="dark">
-                  <p class="policy-name">
-                    Medical & Hosp.
-                  </p>
-
-                  <p>
-                    <small>up to HKD 721,800/year, HKD 600,000/disablity</small>
-                  </p>
-                </ion-text>
-              </div>
-            </ion-col>
-            <ion-col>
-              <div>
-                <ion-icon name="heart-circle" class="policy-accident"></ion-icon>
-                <ion-text color="dark">
-                  <p class="policy-name">
-                    Accident
-                  </p>
-
-                  <p>
-                    <small>up to HKD 1,000,000</small>
-                  </p>
-                </ion-text>
-              </div>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </div>
+          <ion-col size-xs="10">
+            <ion-icon name="document-text-outline" size="large"></ion-icon>
+            <ion-list>
+              <ion-list-header lines="none">
+                <ion-label>Payment options for your premiums</ion-label>
+              </ion-list-header>
+              <ion-item lines="none">
+                <ion-router-link href="#" color="dark">
+                  <div class="text-icon">
+                    <p>Premium Payment Method</p>
+                    <ion-icon color="dark" slot="end" name="chevron-forward" size="large"></ion-icon>
+                  </div>
+                </ion-router-link>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </div>
-
-    <ion-text class="note" color="medium" size="small">
-      <p>
-        *Additional coverages detailed in provision
-      </p>
-    </ion-text>
+    
   </div>    
 </ion-content>

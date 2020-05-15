@@ -95,18 +95,21 @@ ion-avatar {
   }
 }
 
+.inner-section {
+  margin-top: 2.4em;
+}
+
+.text-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #ilasFunds {
   display: flex;
   flex-direction: column;
   width: 100%;
   flex: 1;
-  margin-top: 2.4em;
-
-  h4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }
 
 #policyServicing {
@@ -114,12 +117,37 @@ ion-avatar {
   flex-direction: column;
   width: 100%;
   flex: 1;
-  margin-top: 2.4em;
 
-  h4 {
-    display: flex;
+  ion-row {
     justify-content: center;
-    align-items: center;
+  }
+
+  ion-col {
+    display: flex;
+
+    border: solid #BBB;
+    border-width: 0 0 1px 0;
+
+    ion-icon {
+      color: #ECB214;
+      margin-top: 0.4em;
+    }  
+  }
+
+  ion-list {
+    flex: 1;
+    text-align: left;
+  }
+
+  ion-router-link {
+    width: 100%;
+  }
+
+  ion-item {
+    p {
+      flex: 1;
+      font-weight: 700;
+    }
   }
 }
 
@@ -173,12 +201,12 @@ ion-avatar {
     height: 10em;
   }
 
-  #ilasFunds {
-    margin-top: 3.4em;
+  .inner-section {
+    margin-top: 4.4em;
   }
 
   .oval {
-    width: 16em;
+    width: 20em;
 
     top: calc(10em - 2em);
   }
@@ -190,8 +218,6 @@ ion-avatar {
   }  
 
   .oval {
-    width: 16em;
-
     top: calc(8em - 2em);
   }
 }
