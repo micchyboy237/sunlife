@@ -84,12 +84,12 @@
     </div>
 
     <div *ngIf="selectedIndex !== 2" id="ilasFunds" class="inner-section">      
-      <ion-router-link href="/coverage-from-4-policies" color="dark">
+      <a [routerLink]="[url]" href="/coverage-from-4-policies" color="dark">
         <div class="text-icon">
           <h4>Coverage from 4 Policies</h4>
           <ion-icon slot="end" name="chevron-forward" size="large"></ion-icon>
         </div>
-      </ion-router-link>      
+      </a>      
 
       <div class="policy-grid">
         <ion-grid>
@@ -173,20 +173,20 @@
                 <ion-label>Move value from one policy to another</ion-label>
               </ion-list-header>
               <ion-item lines="none">
-                <ion-router-link href="#" color="dark">
+                <a [routerLink]="[url]" color="dark">
                   <div class="text-icon">
                     <p>Pay with Policy Value</p>
                     <ion-icon color="dark" slot="end" name="chevron-forward" size="large"></ion-icon>
                   </div>
-                </ion-router-link>
+                </a>
               </ion-item>
               <ion-item lines="none">
-                <ion-router-link href="#" color="dark">
+                <a [routerLink]="[url]" color="dark">
                   <div class="text-icon">
                     <p>Standing Instructions</p>
                     <ion-icon color="dark" slot="end" name="chevron-forward" size="large"></ion-icon>
                   </div>
-                </ion-router-link>
+                </a>
               </ion-item>
             </ion-list>
           </ion-col>
@@ -198,20 +198,20 @@
                 <ion-label>Cash out your policy values</ion-label>
               </ion-list-header>
               <ion-item lines="none">
-                <ion-router-link href="#" color="dark">
+                <a [routerLink]="[url]" color="dark">
                   <div class="text-icon">
                     <p>Value Withdrawal</p>
                     <ion-icon color="dark" slot="end" name="chevron-forward" size="large"></ion-icon>
                   </div>
-                </ion-router-link>
+                </a>
               </ion-item>
               <ion-item lines="none">
-                <ion-router-link href="#" color="dark">
+                <a [routerLink]="[url]" color="dark">
                   <div class="text-icon">
                     <p>Payout Method</p>
                     <ion-icon color="dark" slot="end" name="chevron-forward" size="large"></ion-icon>
                   </div>
-                </ion-router-link>
+                </a>
               </ion-item>
             </ion-list>
           </ion-col>
@@ -223,12 +223,12 @@
                 <ion-label>Take a loan against your policy value</ion-label>
               </ion-list-header>
               <ion-item lines="none">
-                <ion-router-link href="#" color="dark">
+                <a [routerLink]="[url]" color="dark">
                   <div class="text-icon">
                     <p>Loans</p>
                     <ion-icon color="dark" slot="end" name="chevron-forward" size="large"></ion-icon>
                   </div>
-                </ion-router-link>
+                </a>
               </ion-item>
             </ion-list>
           </ion-col>
@@ -240,12 +240,12 @@
                 <ion-label>Payment options for your premiums</ion-label>
               </ion-list-header>
               <ion-item lines="none">
-                <ion-router-link href="#" color="dark">
+                <a [routerLink]="[url]" color="dark">
                   <div class="text-icon">
                     <p>Premium Payment Method</p>
                     <ion-icon color="dark" slot="end" name="chevron-forward" size="large"></ion-icon>
                   </div>
-                </ion-router-link>
+                </a>
               </ion-item>
             </ion-list>
           </ion-col>
