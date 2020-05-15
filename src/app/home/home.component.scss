@@ -91,7 +91,7 @@ ion-avatar {
   }
 
   ion-col:nth-child(2) {
-    padding-top: 20px;
+    padding-top: 1em;
   }
 }
 
@@ -128,7 +128,7 @@ ion-avatar {
     border: solid #BBB;
     border-width: 0 0 1px 0;
 
-    ion-icon {
+    & > ion-icon {
       color: #ECB214;
       margin-top: 0.4em;
     }  
@@ -137,6 +137,10 @@ ion-avatar {
   ion-list {
     flex: 1;
     text-align: left;
+  }
+
+  ion-label {
+    color: #777;
   }
 
   ion-router-link {
@@ -203,6 +207,13 @@ ion-avatar {
 
   .inner-section {
     margin-top: 4.4em;
+  }
+
+  #home-nav ion-grid {
+    p {
+      font-size: 0.8em;
+      line-height: 0.8em;
+    }
   }
 
   .oval {

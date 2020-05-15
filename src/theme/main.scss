@@ -6,6 +6,10 @@ html {
     font-size: proportional-text($base-font-size, 320px);
 }
 
+button, ion-button { font-size: inherit }
+input, ion-input { font-size: inherit }
+ion-list-header, ion-item { font-size: inherit }
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0; 
@@ -40,6 +44,6 @@ h6, .h6 {
   font-size: 1em;
 }
 
-button, ion-button { font-size: inherit }
-input, ion-input { font-size: inherit }
-ion-item { font-size: inherit }
+label, ion-label {
+  font-size: 0.6em !important;
+}
