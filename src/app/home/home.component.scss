@@ -110,6 +110,11 @@ ion-avatar {
   flex-direction: column;
   width: 100%;
   flex: 1;
+
+  background-image: url("/assets/homebg.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 #policyServicing {
@@ -192,13 +197,18 @@ ion-avatar {
 }
 
 .note {
+  margin-top: 2em;
   font-size: 0.6em;
   font-weight: bold;
 }
 
 @media (min-width: 576px) {
   #container {
-    font-size: 0.8rem;
+    font-size: 0.8rem;    
+  }
+
+  #ilasFunds {
+    background-position: 0 120%;
   }
 
   #banner {
@@ -224,9 +234,13 @@ ion-avatar {
 }
 
 @media (min-width: 992px) {
+  #ilasFunds {
+    background-size: 20em;
+  }
+
   #banner {
     height: 8em;
-  }  
+  }
 
   .oval {
     top: calc(8em - 2em);
