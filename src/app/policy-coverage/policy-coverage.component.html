@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>All Policies</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">      
+    <ion-grid>
+      <ion-row>
+        <ion-col size-xs="10">
+          <div class="text-icon">
+            <ion-text>
+              <h5>LifeSuper 20</h5>
+              <p>Policy No. 601007042</p>
+              <p>Status: Inforce</p>
+            </ion-text>
+            <ion-icon color="dark" slot="end" name="chevron-forward" size="large"></ion-icon>
+          </div>
+
+          <div class="justify-items-between">
+            <p>Sum Assured</p>
+            <p class="flex justify-flex-end align-flex-end">HKD 5,900,000</p>
+          </div>
+
+          <div class="justify-items-between">
+            <p>Surrender Value*</p>
+            <p class="flex justify-flex-end align-flex-end">HKD 240,770</p>
+          </div>
+
+          <div class="justify-items-between">
+            <p>Modal Premium / Regular Contribution including Levy</p>
+            <p class="flex justify-flex-end align-flex-end">HKD 3,441.00</p>
+          </div>
+        </ion-col>
+
+        <ion-col size-xs="10">
+          <ion-icon name="document-text-outline" size="large"></ion-icon>
+          <ion-list>
+            <ion-list-header lines="none">
+              <ion-label>Cash out your policy values</ion-label>
+            </ion-list-header>
+            <ion-item lines="none">
+              <a [routerLink]="[url]" color="dark">
+                <div class="text-icon">
+                  <p>Value Withdrawal</p>
+                  <ion-icon color="dark" slot="end" name="chevron-forward" size="large"></ion-icon>
+                </div>
+              </a>
+            </ion-item>
+            <ion-item lines="none">
+              <a [routerLink]="[url]" color="dark">
+                <div class="text-icon">
+                  <p>Payout Method</p>
+                  <ion-icon color="dark" slot="end" name="chevron-forward" size="large"></ion-icon>
+                </div>
+              </a>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+
+        <ion-col size-xs="10">
+          <ion-icon name="document-text-outline" size="large"></ion-icon>
+          <ion-list>
+            <ion-list-header lines="none">
+              <ion-label>Take a loan against your policy value</ion-label>
+            </ion-list-header>
+            <ion-item lines="none">
+              <a [routerLink]="[url]" color="dark">
+                <div class="text-icon">
+                  <p>Loans</p>
+                  <ion-icon color="dark" slot="end" name="chevron-forward" size="large"></ion-icon>
+                </div>
+              </a>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+
+        <ion-col size-xs="10">
+          <ion-icon name="document-text-outline" size="large"></ion-icon>
+          <ion-list>
+            <ion-list-header lines="none">
+              <ion-label>Payment options for your premiums</ion-label>
+            </ion-list-header>
+            <ion-item lines="none">
+              <a [routerLink]="[url]" color="dark">
+                <div class="text-icon">
+                  <p>Premium Payment Method</p>
+                  <ion-icon color="dark" slot="end" name="chevron-forward" size="large"></ion-icon>
+                </div>
+              </a>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

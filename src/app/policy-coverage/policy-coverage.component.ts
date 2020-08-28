@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  selector: 'policy-coverage',
+  templateUrl: './policy-coverage.component.html',
+  styleUrls: ['./policy-coverage.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class PolicyCoverageComponent implements OnInit {
   public folder: string;
   public selectedIndex: number;
 

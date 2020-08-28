@@ -1,0 +1,28 @@
+ion-toolbar {
+  --background: #EBAB00;
+}
+
+ion-row {
+  justify-content: center;
+}
+
+ion-col {
+  border: solid #EBAB00;
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: white;
+
+  box-shadow: 0 2px 2px #AAA;
+  margin-top: 1em;
+}
+
+#container {
+  background-color: #E4E4E4;
+  font-size: 0.7em;
+}
+
+.text-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

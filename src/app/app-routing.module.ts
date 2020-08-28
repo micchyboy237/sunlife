@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: 'coverage-from-4-policies',
-    loadChildren: () => import('./home/home.module').then( m => m.HomeModule)
+    loadChildren: () => import('./policy-coverage/policy-coverage.module').then( m => m.HomeModule)
   },
   {
     path: '**',

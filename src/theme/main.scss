@@ -1,55 +1,26 @@
 // Import variables
 @import "variables";
 @import "functions";
+@import "overrides";
 
-html {
-    font-size: proportional-text($base-font-size, 320px);
+.justify-items-between {
+  display: flex;
+  justify-content: space-between;
+
+  & > * {
+    flex: 1;
+  }
 }
 
-button, ion-button { font-size: inherit }
-input, ion-input { font-size: inherit }
-ion-list-header, ion-item { font-size: inherit }
-
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 0; 
+.flex {
+  display: flex;
 }
 
-p {
-  margin-top: 0;
-  margin-bottom: 0; 
+.justify-flex-end {
+  
+  justify-content: flex-end;
 }
 
-h1, .h1 {
-  font-size: 1.40em;
-}
-
-h2, .h2 {
-  font-size: 1.32em;
-}
-
-h3, .h3 {
-  font-size: 1.24em;
-}
-
-h4, .h4 {
-  font-size: 1.16em;
-}
-
-h5, .h5 {
-  font-size: 1.08em;
-}
-
-h6, .h6 {
-  font-size: 1em;
-}
-
-label, ion-label {
-  font-size: 0.6em !important;
-}
-
-a {
-  text-decoration: none;
-  background-color: transparent;
-  color: var(--ion-color-dark);
+.align-flex-end {
+  align-items: flex-end;
 }
